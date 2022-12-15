@@ -22,7 +22,7 @@
         <p class="headerTitle">Deutschland</p>
 
         <!--Offcanvas nav menu-->
-    <div class="offcanvas offcanvas-start offcanvas-md" id="mobileNav">
+    <div class="offcanvas offcanvas-start" id="mobileNav">
         <div class="offcanvas-header">
             <h3 class="offcanvas-title">Menu</h1>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -49,9 +49,19 @@
     </button>
     </div>
 
+    <!--History Title-->
+    <div class="historyTitle">
+        <h1>History</h1>
+    </div>
+
     <!--Main Image for the History Page-->
     <div class="historyImage">
-        <img src="images/history.PNG" alt="An image of different historical figures from Germany's history.">
+        <picture>
+            <source media="(max-width: 719px)" srcset="images/history-sm.PNG">
+            <source media="(min-width: 720px)" srcset="images/history-med.PNG">
+            <source media="(min-width 992px)" srcset="images/history.PNG">
+            <img src="images/history.PNG">
+        </picture>
     </div>
 
     <!--Brief blurb as an intro to the page-->
@@ -150,9 +160,8 @@
                             </div>
                         </div>
                     </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
 

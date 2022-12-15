@@ -134,6 +134,19 @@ body{
     padding-left: 5px;
     font-size: .8rem;
 }
+.historyTitle{
+    background-color: #F8D000;
+    text-align: center;
+}
+
+.historyImage{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+picture{
+    grid-column: 2/3;
+}
 }
 
 /*Larger Screen*/
