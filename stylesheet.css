@@ -14,6 +14,7 @@ body{
     grid-column: 2/3;
     grid-row: 1/2;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 #offcanvasButton{
@@ -27,12 +28,10 @@ body{
 
 .flagBlock{
     text-align: center;
-    width: 80%;
 }
 
 .blackBlock{
     background-color: black;
-    color: white;
     border: thin solid black;
 }
 
@@ -52,12 +51,36 @@ body{
     font-weight: bold;
 }
 
+.flagBlockNav.white{
+    color: white;
+}
+
 .introText{
     text-align: center;
 }
 
+.footer{
+    background-color: #DC0707;
+    font-weight: bold;
+    font-variant: small-caps;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 0;
+}
+
+.names{
+    text-align: left;
+}
+
+.dueDate{
+    text-align: right;
+}
+
 /*Mobile Screen*/
 @media screen and (max-device-width: 719px){
+#offcanvasButton{
+    font-size: 1.6rem;
+}
 
 .header{
     display: grid;
@@ -65,7 +88,52 @@ body{
     grid-template-rows: 1fr;
 }
 
+.carousel-inner{
+    max-height: 400px;
+}
 
+.introText{
+    font-size: 1.3rem;
+}
+
+.flagBlockContent{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.flagBlock{
+    grid-column: 2/3;
+}
+
+.blackBlock{
+    height: 75px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.redBlock{
+    height: 75px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.yellowBlock{
+    height: 75px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.flagBlockNav{
+    font-size: 1.4rem;
+    grid-row: 2/3;
+}
+
+.footer{
+    margin-top: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: .8rem;
+}
 }
 
 /*Larger Screen*/
