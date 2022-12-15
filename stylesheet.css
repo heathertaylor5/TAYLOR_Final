@@ -68,8 +68,12 @@ body{
     margin-bottom: 0;
 }
 
-.names{
+.className{
     text-align: left;
+}
+
+.names{
+    text-align: center;
 }
 
 .dueDate{
@@ -145,6 +149,18 @@ body{
 }
 
 picture{
+    grid-column: 2/3;
+}
+
+.historyIntro{
+    text-align: center;
+    font-style: italic;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding-top: 15px;
+}
+
+.historyIntro > p{
     grid-column: 2/3;
 }
 }
