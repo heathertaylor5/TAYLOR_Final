@@ -8,9 +8,6 @@ body{
     color: #DC0707;
     text-align: center;
     background-color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
 }
 
 .headerTitle{
@@ -57,4 +54,21 @@ body{
 
 .introText{
     text-align: center;
+}
+
+/*Mobile Screen*/
+@media screen and (max-device-width: 719px){
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+}
+
+/*Larger Screen*/
+@media screen and (min-device-width: 720px){
+
 }
