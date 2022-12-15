@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German History</title>
+    <meta type="description" content="The final project for Responsive Web Design by Heather Taylor and Evan Budwill. 
+    This page reviews some German history.">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!--Style-->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+        <p class="headerTitle">Deutschland</p>
+        
+
+        <!--Offcanvas nav menu-->
+    <div class="offcanvas offcanvas-start" id="mobileNav">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Menu</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Location</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">History</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Culture</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Other</a></li>                
+            </ul>
+        </div>
+    </div>
+
+    <!--Button to open Offcanvas nav menu-->
+    <button class="btn" id="offcanvasButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+        Menu
+    </button>
+    </div>
+
+    <!--History Title-->
+    <div class="historyTitle">
+        <h1>History</h1>
+    </div>
+
+    <!--Main Image for the History Page-->
+    <div class="historyImage">
+        <picture>
+            <source media="(max-width: 719px)" srcset="images/history-sm.PNG">
+            <source media="(min-width: 720px)" srcset="images/history-med.PNG">
+            <source media="(min-width 992px)" srcset="images/history.PNG">
+            <img src="images/history.PNG">
+        </picture>
+    </div>
+
+    <!--Brief blurb as an intro to the page-->
+    <div class="historyIntro">
+        <p>Many of us are aware of Germany's role in World War II but there is much more to explore about this ever-changing culture.
+            The history is Germany is more accurately described as a history of the people, rather than a region. <br>
+            Let's explore some early history.
+        </p>
+    </div>
+
+    <!--Accordion feature dividing eras/events-->
+    <div class="bootstrapAccordion">
+        <div class="container mt-3">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                            Roman Empire
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <blockquote cite="https://en.wikipedia.org/wiki/History_of_Germany">
+                            Augustus, first emperor of the Roman Empire, considered conquest beyond the Rhine and the Danube not 
+                            only regular foreign policy but also necessary to counter Germanic incursions into a still rebellious 
+                            Gaul. A series of forts and commercial centers were established along the two rivers. Some tribes, 
+                            such as the Ubii consequently allied with Rome and readily adopted advanced Roman culture. During the 
+                            1st century CE Roman legions conducted extended campaigns into Germania magna, the area north of the 
+                            Upper Danube and east of the Rhine, attempting to subdue the various tribes. Roman ideas of 
+                            administration, the imposition of taxes and a legal framework were frustrated by the total absence 
+                            of an infrastructure. The campaigns of Germanicus, for example were almost exclusively characterized 
+                            by frequent massacres of villagers and indiscriminate pillaging. The tribes, however maintained 
+                            their elusive identities. In 9 AD a coalition of tribes under the Cherusci chieftain Arminius, who 
+                            was familiar with Roman tactical doctrines, defeated a sizeable Roman force in the Battle of the 
+                            Teutoburg Forest. Consequently, Rome resolved to permanently establish the Rhine/Danube border and 
+                            refrain from further territorial advance into Germania. By AD 100 the frontier along the 
+                            Rhine and the Danube and the Limes Germanicus was firmly established. Several Germanic tribes lived 
+                            under Roman rule south and west of the border, as described in Tacitus's Germania. These lands 
+                            represent the modern states Baden-Württemberg, southern Bavaria, southern Hesse, Saarland and the 
+                            Rhineland. Austria formed the regular provinces of Noricum and Raetia. The provinces 
+                            Germania Inferior (with the capital situated at Colonia Claudia Ara Agrippinensium, modern Cologne) 
+                            and Germania Superior (with its capital at Mogontiacum, modern Mainz), were formally established in 
+                            85 AD, after long and painful campaigns as lasting military control was confined to the lands surrounding 
+                            the rivers. Christianity was introduced to Roman controlled western Germania well before the 
+                            Middle Ages, with Christian religious structures such as the Aula Palatina of Trier built during the 
+                            reign of Constantine I (r. 306-337 AD).
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                                Otto the Great
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <blockquote cite="https://en.wikipedia.org/wiki/History_of_Germany">
+                                    In 936, Otto I was crowned German king at Aachen, in 961 King of Italy in Pavia and crowned 
+                                    emperor by Pope John XII in Rome in 962. The tradition of the German King as protector of the 
+                                    Kingdom of Italy and the Latin Church resulted in the term Holy Roman Empire in the 12th century. 
+                                    The name, that was to identify with Germany continued to be used officially, with the extension 
+                                    added: Nationis Germanicæ (of the German nation) after the last imperial coronation in Rome in 
+                                    1452 until its dissolution in 1806. Otto strengthened the royal authority by re-asserting 
+                                    the old Carolingian rights over ecclesiastical appointments. Otto wrested from the nobles the 
+                                    powers of appointment of the bishops and abbots, who controlled large land holdings. Additionally, 
+                                    Otto revived the old Carolingian program of appointing missionaries in the border lands. Otto 
+                                    continued to support celibacy for the higher clergy, so ecclesiastical appointments never became 
+                                    hereditary. By granting lands to the abbots and bishops he appointed, Otto actually turned these 
+                                    bishops into "princes of the Empire" (Reichsfürsten). In this way, Otto was able to establish 
+                                    a national church. Outside threats to the kingdom were contained with the decisive defeat of the 
+                                    Hungarian Magyars at the Battle of Lechfeld in 955. The Slavs between the Elbe and the Oder rivers 
+                                    were also subjugated. Otto marched on Rome and drove John XII from the papal throne and for years 
+                                    controlled the election of the pope, setting a firm precedent for imperial control of the papacy 
+                                    for years to come.<br>
+                                    During the reign of Conrad II's son, Henry III (1039 to 1056), the empire supported the Cluniac 
+                                    reforms of the Church, the Peace of God, prohibition of simony (the purchase of clerical offices), 
+                                    and required celibacy of priests. Imperial authority over the Pope reached its peak. However, Rome 
+                                    reacted with the creation of the College of Cardinals and Pope Gregory VII's series of clerical 
+                                    reforms. Pope Gregory insisted in his Dictatus Papae on absolute papal authority over appointments 
+                                    to ecclesiastical offices. The subsequent conflict in which emperor Henry IV was compelled to 
+                                    submit to the Pope at Canossa in 1077, after having been excommunicated came to be known as the 
+                                    Investiture Controversy. In 1122, a temporary reconciliation was reached between Henry V and the 
+                                    Pope with the Concordat of Worms. With the conclusion of the dispute the Roman church and the 
+                                    papacy regained supreme control over all religious affairs. Consequently, the imperial 
+                                    Ottonian church system (Reichskirche) declined. It also ended the royal/imperial tradition of 
+                                    appointing selected powerful clerical leaders to counter the Imperial secular princes.
+                                    Between 1095 and 1291 the various campaigns of the crusades to the Holy Land took place. 
+                                    Knightly religious orders were established, including the Knights Templar, the Knights of 
+                                    St John (Knights Hospitaller), and the Teutonic Order.<br>
+                                    The term sacrum imperium (Holy Empire) was first used officially by Friedrich I in 1157, but the 
+                                    words Sacrum Romanum Imperium, Holy Roman Empire, were only combined in July 1180 and would never 
+                                    consistently appear on official documents from 1254 onwards.
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                                Thirty Years' War
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <blockquote cite="https://en.wikipedia.org/wiki/History_of_Germany">
+                                    The 1618 to 1648 Thirty Years' War, that took place almost exclusively in the Holy Roman Empire 
+                                    has its origins, which remain widely debated, in the unsolved and recurring conflicts of the 
+                                    Catholic and Protestant factions. The Catholic emperor Ferdinand II attempted to achieve the 
+                                    religious and political unity of the empire, while the opposing Protestant Union forces were 
+                                    determined to defend their religious rights. The religious motive served as the universal 
+                                    justification for the various territorial and foreign princes, who over the course of several 
+                                    stages joined either of the two warring parties in order to gain land and power.<br>
+                                    The conflict was sparked by the revolt of the Protestant nobility of Bohemia against emperor 
+                                    Matthias' succession policies. After imperial triumph at the Battle of White Mountain and a 
+                                    short-lived peace, the war grew to become a political European conflict by the intervention 
+                                    of King Christian IV of Denmark from 1625 to 1630, Gustavus Adolphus of Sweden from 1630 to 
+                                    1648 and France under Cardinal Richelieu from 1635 to 1648. The conflict increasingly evolved 
+                                    into a struggle between the French House of Bourbon and the House of Habsburg for predominance 
+                                    in Europe, for which the central German territories of the empire served as the battleground.<br>
+                                    The war ranks among the most catastrophic in history as three decades of constant warfare and 
+                                    destruction had left the land devastated. Marauding armies incessantly pillaged the countryside, 
+                                    seized and levied heavy taxes on cities and indiscriminately plundered the food stocks of the 
+                                    peasantry. There were also the countless bands of murderous outlaws, sick, homeless, disrupted 
+                                    people and invalid soldiery. Overall social and economic disruption caused a dramatic decline in 
+                                    population as a result of pandemic murder and random rape and killings, endemic infectious 
+                                    diseases, crop failures, famine, declining birth rates, wanton burglary, witch-hunts and the 
+                                    emigration of terrified people. Estimates vary between a 38% drop from 16 million people in 1618 
+                                    to 10 million by 1650 and a mere 20% drop from 20 million to 16 million. The Altmark and 
+                                    Württemberg regions were especially hard hit, where it took generations to fully recover.<br>
+                                    The war was the last major religious struggle in mainland Europe and ended in 1648 with the 
+                                    Peace of Westphalia. It resulted in increased autonomy for the constituent states of the Holy 
+                                    Roman Empire, limiting the power of the emperor. Most of Alsace was ceded to France, Western 
+                                    Pomerania and Bremen-Verden were given to Sweden as Imperial fiefs, and the Netherlands officially 
+                                    left the Empire.
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                                German Confederation
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <blockquote cite="https://en.wikipedia.org/wiki/History_of_Germany">
+                                    During the 1815 Congress of Vienna the 39 former states of the Confederation of the Rhine 
+                                    joined the German Confederation, a loose agreement for mutual defense. Attempts of economic 
+                                    integration and customs coordination were frustrated by repressive anti-national policies. 
+                                    Great Britain approved of the union, convinced that a stable, peaceful entity in central Europe 
+                                    could discourage aggressive moves by France or Russia. Most historians, however, concluded, that 
+                                    the Confederation was weak and ineffective and an obstacle to German nationalism. The union was
+                                     undermined by the creation of the Zollverein in 1834, the 1848 revolutions, the rivalry between 
+                                     Prussia and Austria and was finally dissolved in the wake of the Austro-Prussian War of 1866, 
+                                     to be replaced by the North German Confederation during the same year.
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+                                German Empire
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <blockquote cite="https://en.wikipedia.org/wiki/History_of_Germany">
+                                    Chancellor Otto von Bismarck determined the political course of the German Empire until 1890. 
+                                    He fostered alliances in Europe to contain France on the one hand and aspired to consolidate 
+                                    Germany's influence in Europe on the other. His principal domestic policies focused on the 
+                                    suppression of socialism and the reduction of the strong influence of the Roman Catholic Church 
+                                    on its adherents. He issued a series of anti-socialist laws in accord with a set of social laws, 
+                                    that included universal health care, pension plans and other social security programs. His 
+                                    Kulturkampf policies were vehemently resisted by Catholics, who organized political opposition 
+                                    in the Center Party (Zentrum). German industrial and economic power had grown to match Britain by 
+                                    1900.<br>
+                                    In 1888, the young and ambitious Kaiser Wilhelm II became emperor. He rejected advice from 
+                                    experienced politicians and ordered Bismarck's resignation in 1890. He opposed Bismarck's 
+                                    careful and delicate foreign policy and was determined to pursue colonialist policies, as Britain 
+                                    and France had been doing for centuries. The Kaiser promoted the active colonization of Africa 
+                                    and Asia for the lands that were not already colonies of other European powers. The Kaiser took 
+                                    a mostly unilateral approach in Europe only allied with the Austro-Hungarian Empire, and embarked 
+                                    on a dangerous naval arms race with Britain. His aggressive and erroneous policies greatly 
+                                    contributed to the situation in which the assassination of the Austrian-Hungarian crown prince 
+                                    would spark off World War I.
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+    <div class="footer">
+        
+        <div class="className">
+            <p>Responsive Web Design</p>
+        </div>
+        <div class="names">
+            <p>Evan Budwill & Heather Taylor</p>
+        </div>
+        <div class="dueDate">
+            <p>December 16, 2022</p>
+        </div>
+    </div>
+</body>
+
