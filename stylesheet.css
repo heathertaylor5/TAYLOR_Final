@@ -45,15 +45,6 @@ body{
     border: thin solid black;
 }
 
-.flagBlockNav{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.flagBlockNav.white{
-    color: white;
-}
 
 .introText{
     text-align: center;
@@ -68,8 +59,12 @@ body{
     margin-bottom: 0;
 }
 
-.names{
+.className{
     text-align: left;
+}
+
+.names{
+    text-align: center;
 }
 
 .dueDate{
@@ -138,6 +133,38 @@ body{
 .prost{
     font-style: italic;
 }
+
+.historyTitle{
+    background-color: #F8D000;
+    text-align: center;
+}
+
+.historyImage{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+picture{
+    grid-column: 2/3;
+}
+
+.historyIntro{
+    text-align: center;
+    font-style: italic;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding-top: 15px;
+}
+
+.historyIntro > p{
+    grid-column: 2/3;
+}
+}
+
+/*Larger Screen*/
+@media screen and (min-device-width: 720px){
+
+
 }
 
 /*Larger Screen*/
