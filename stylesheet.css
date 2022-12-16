@@ -45,15 +45,6 @@ body{
     border: thin solid black;
 }
 
-.flagBlockNav{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.flagBlockNav.white{
-    color: white;
-}
 
 .introText{
     text-align: center;
@@ -138,6 +129,11 @@ body{
     padding-left: 5px;
     font-size: .8rem;
 }
+
+.prost{
+    font-style: italic;
+}
+
 .historyTitle{
     background-color: #F8D000;
     text-align: center;
@@ -163,6 +159,12 @@ picture{
 .historyIntro > p{
     grid-column: 2/3;
 }
+}
+
+/*Larger Screen*/
+@media screen and (min-device-width: 720px){
+
+
 }
 
 /*Larger Screen*/
