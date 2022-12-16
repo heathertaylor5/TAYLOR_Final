@@ -1,3 +1,4 @@
+/*Basic Body Formatting*/
 body{
     margin: 0;
     background-color: rgb(214, 210, 210);
@@ -15,8 +16,10 @@ body{
     grid-row: 1/2;
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
+/*OffCanvas basic formatting*/
 #offcanvasButton{
     background-color: #DC0707;
     color: black;
@@ -26,6 +29,16 @@ body{
     font-weight: bold;
 }
 
+/*basic navbar formatting*/
+.navbar{
+    background-color: #DC0707;
+}
+
+.nav-link{
+    color: white;
+}
+
+/*basic flag link block formatting*/
 .flagBlock{
     text-align: center;
 }
@@ -45,7 +58,17 @@ body{
     border: thin solid black;
 }
 
+.flagBlockNav{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
 
+.flagBlockNav.white{
+    color: white;
+}
+
+/*Intro and footer formatting*/
 .introText{
     text-align: center;
 }
@@ -71,10 +94,18 @@ body{
     text-align: right;
 }
 
+
+/*Responsive Formatting*/
 /*Mobile Screen*/
-@media screen and (max-device-width: 719px){
+@media screen and (max-device-width: 768px){
+
+    /*navigation & header*/
 #offcanvasButton{
     font-size: 1.6rem;
+}
+
+.navbar{
+    display: none;
 }
 
 .header{
@@ -83,14 +114,17 @@ body{
     grid-template-rows: 1fr;
 }
 
+/*carousel sizing*/
 .carousel-inner{
     max-height: 400px;
 }
 
+/*intro stuff*/
 .introText{
     font-size: 1.3rem;
 }
 
+/*flag link block*/
 .flagBlockContent{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -123,6 +157,11 @@ body{
     grid-row: 2/3;
 }
 
+.flagBlock.flagBlockImg{
+    display: none;
+}
+
+/*footer, small detail, and image formatting*/
 .footer{
     margin-top: 40px;
     padding-right: 5px;
@@ -134,6 +173,7 @@ body{
     font-style: italic;
 }
 
+/*History Page Formatting*/
 .historyTitle{
     background-color: #F8D000;
     text-align: center;
@@ -162,9 +202,27 @@ picture{
 }
 
 /*Larger Screen*/
-@media screen and (min-device-width: 720px){
+@media screen and (min-device-width: 769px){
 
+/*Index Page*/
 
+.flagBlockContent{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+    
+.flagBlock{
+    grid-column: 2/3;
+    box-sizing: border-box;
+}
+
+.flagBlockNav{
+    font-size: 2rem;
+}
+
+.blackBlock .redBlock .yellowBlock{
+    height: 100px;
+}
 }
 
 /*Larger Screen*/
