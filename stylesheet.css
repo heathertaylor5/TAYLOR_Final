@@ -163,7 +163,9 @@ picture{
 
 /*Larger Screen*/
 @media screen and (min-device-width: 720px){
-
+    #offcanvasButton{
+        display: none;
+    }
 
 }
 
