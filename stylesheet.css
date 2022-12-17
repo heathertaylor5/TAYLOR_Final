@@ -15,6 +15,7 @@ body{
     grid-row: 1/2;
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 #offcanvasButton{
@@ -24,6 +25,19 @@ body{
     grid-row: 1/2;
     width: 60%;
     font-weight: bold;
+}
+
+.navbar{
+    background-color: #DC0707;
+}
+
+.nav-link{
+    color: white;
+}
+
+.famousTitle{
+    background-color: #F8D000;
+    text-align: center;
 }
 
 .flagBlock{
@@ -71,10 +85,19 @@ body{
     text-align: right;
 }
 
+.person{
+    background-color: #F8D000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*Mobile Screen*/
-@media screen and (max-device-width: 719px){
+@media screen and (max-device-width: 767px){
 #offcanvasButton{
     font-size: 1.6rem;
+}
+
+.navbar{
+    display: none;
 }
 
 .header{
@@ -161,14 +184,22 @@ picture{
 }
 }
 
-/*Larger Screen*/
-@media screen and (min-device-width: 720px){
+.famousName{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
 
+/*Larger Screen*/
+@media screen and (min-device-width: 768px){
+    #offcanvasButton{
+        display: none;
+    }
 
 }
 
 /*Larger Screen*/
-@media screen and (min-device-width: 720px){
+@media screen and (min-device-width: 992px){
 
 }
 
