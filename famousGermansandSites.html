@@ -70,7 +70,7 @@
                         <a class="nav-link" href="culture.html">Culture</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="other.html">Other</a>
+                        <a class="nav-link" href="#">Other</a>
                     </li>
                </ul> 
             </div>
@@ -78,7 +78,89 @@
     
     <!--Famous Germans and Sites Title-->
        <div class="famousTitle">
-        <h1>Famous Germans and Sites</h1>
+        <h1>Famous German People and Sites</h1>
     </div>
 
-    
+    <!--Famous Germans and sites content-->
+    <div class="people kant">
+        <div class="person">
+            <p class="famousName">Immanuel Kant</p>
+            <img src="images/kant-mobile.jpg" alt="A portrait of Immanuel Kant" 
+            data-bs-toggle="tooltip" 
+            data-bs-custom-class="custom-tooltip" 
+            data-bs-title="Kant was Chidi's favourite philosopher in NBC's The Good Place">
+            <p class="personInfo claimToFame">Claim to Fame: Philosophy</p>
+            <p class="personInfo">22 April 1724 - 12 February 1804</p>
+        </div>
+
+        <div class="person beethoven">
+            <p class="famousName">Ludwig van Beethoven</p>
+            <img src="images/Beethoven.jpg" alt="A portrait of Ludwig van Beethoven" 
+            data-bs-toggle="tooltip" 
+            data-bs-custom-class="custom-tooltip" 
+            data-bs-title="The Saint Bernard in the Beethoven movies where a dog is named after the composer was actually named Chris!">
+            <p class="personInfo claimToFame">Claim to Fame: Music</p>
+            <p class="personInfo">17 December 1770 - 26 March 1827</p>
+        </div>
+
+        <div class="person einstein">
+            <p class="famousName">Albert Einstein</p>
+            <img src="images/Einstein.jpg" alt="A portrait of Albert Einstein" 
+            data-bs-toggle="tooltip" 
+            data-bs-custom-class="custom-tooltip" 
+            data-bs-title="Kevin's trivia group in The Office was named after Einstein but when a question about this physicist came up, they did not know the answer!">
+            <p class="personInfo claimToFame">Claim to Fame: Physics</p>
+            <p class="personInfo">14 March 1879 - 18 April 1955</p>
+        </div>
+    </div>
+
+    <div class="sites">
+        <div class="site gate">
+            <p class="famousSite">Brandenburg Gate</p>
+            <img src="images/brandenburg.jpg" alt="A photo of the Brandenburg Gate" 
+            data-bs-toggle="tooltip" 
+            data-bs-custom-class="custom-tooltip" 
+            data-bs-title="In the game Tropico, players can steal the Brandenburg Gate to improve their civilization.">
+            <p class="siteInfo location">Location: Berlin</p>
+            <p class="siteInfo">Erected in: 1791</p>
+        </div>
+
+        <div class="site cathedral">
+            <p class="famousSite">Cologne Cathedral</p>
+            <img src="images/cologne.jpg" alt="A photo of the Cologne Cathedral" 
+            data-bs-toggle="tooltip" 
+            data-bs-custom-class="custom-tooltip" 
+            data-bs-title="The cologne cathedral is a masterwork of architecture with its 140-foot-tall ceiling!">
+            <p class="siteInfo location">Location: Cologne</p>
+            <p class="siteInfo">Erected in: 1560</p>
+        </div>
+
+        <div class="site castle">
+            <p class="famousSite">Neuschwanstein Castle</p>
+            <img src="images/brandenburg.jpg" alt="A photo of the Neuschwanstein Castle" 
+            data-bs-toggle="tooltip" 
+            data-bs-custom-class="custom-tooltip" 
+            data-bs-title="This castle is thought to be the inspiration for the disney castle!">
+            <p class="siteInfo location">Location: Hohenschwangau</p>
+            <p class="siteInfo">Erected in: 1886</p>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="className">
+            <p>Responsive Web Design</p>
+        </div>
+        <div class="names">
+            <p>Evan Budwill & Heather Taylor</p>
+        </div>
+        <div class="dueDate">
+            <p>December 16, 2022</p>
+        </div>
+    </div>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
+</body>
