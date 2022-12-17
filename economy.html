@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+
+        <!--Header-->
+    <div class="header">
+        <p class="headerTitle">Deutschland</p>
+
+    <!--Button to open Offcanvas nav menu-->
+    <button class="btn d-md-none" id="offcanvasButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+        Menu
+    </button>
+
+    <!--Offcanvas nav menu-->
+    <div class="offcanvas offcanvas-start" id="mobileNav">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Menu</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="location.html">Location</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="history.html">History</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Culture</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Other</a></li>                
+            </ul>
+        </div>
+    </div>
+    </div>
+
+        <!--Nav Bar for larger screen sizes-->
+        <div class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+               <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="culture.html">Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="other.html">Other</a>
+                    </li>
+               </ul> 
+            </div>
+        </div>
+
+        <h1>Economy</h1>
+
+        <div class="container">
+            <div class="row">
+
+                
+                <div class="col-md-6">
+                    <img id="mark" src="deutschemark.jpg" alt="A german coin">
+                </div>
+                <div class="col-md-6">
+                    <h3>In the past</h3>
+                    <p>In 1834, the Deutcher Zollverein (German Customs Union) was established. This step as well as the expansion of the railway systems were what helped Germany's industrialization the most. Their railways found so much success in the 1840s that between then and 1870, over 8,000km of rail had been built. This success eventually led to the creation of the Deutsche Mark. However, the new currency did not fully come into use until 1907 as the previous currency of silver coins retained their value extremely well.</p>
+                </div>
+                
+                <div class="col-md-6 mt-3 order-lg-2">
+                    <img src="volkswagenfactory.jpg" alt="A large factory for Volkswagen vehicles">
+                </div>
+                <div class="col-md-6">
+                    <h3>In the present</h3>
+                    <p>Germany's economy has come a long way since the 80s. In fact, they are now the largest national economy in Europe. Some of their main export goods are: motor vehicles, machinery, and electrical equipment. With brands like Volkswagen, BMW, and Mercedes all calling the country home, it's no surprise vehicles are a major part of the economy. Currently, Germany is focusing heavily on renewable energy. Almost half of all energy consumed in 2019 was from renewable sources.</p>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Press me for a fun fact!
+                    </button>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                          The majority of taxis in Germany are made by Mercedes!
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--Footer-->
+    <div class="footer">
+        <div class="className">
+            <p>Responsive Web Design</p>
+        </div>
+        <div class="names">
+            <p>Evan Budwill & Heather Taylor</p>
+        </div>
+        <div class="dueDate">
+            <p>December 16, 2022</p>
+        </div>
+    </div>
+    </body>
+</html>
