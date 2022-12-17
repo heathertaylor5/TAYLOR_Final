@@ -396,17 +396,6 @@ body{
     margin-bottom: 0;
 }
 
-
-#offcanvasButton{
-    background-color: #DC0707;
-    color: black;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    width: 60%;
-    font-weight: bold;
-}
-
-
 .navbar{
     background-color: #DC0707;
 }
@@ -424,12 +413,6 @@ body{
 }
 
 @media screen and (max-device-width: 768px){
-
-
-#offcanvasButton{
-    font-size: 1.6rem;
-}
-
 .navbar{
     display: none;
 }

@@ -10,17 +10,12 @@
     </head>
     <body>
 
-        <!--Header-->
+    <!--Header-->
     <div class="header">
         <p class="headerTitle">Deutschland</p>
 
-    <!--Button to open Offcanvas nav menu-->
-    <button class="btn d-md-none" id="offcanvasButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
-        Menu
-    </button>
-
-    <!--Offcanvas nav menu-->
-    <div class="offcanvas offcanvas-start" id="mobileNav">
+        <!--Offcanvas nav menu-->
+    <div class="offcanvas offcanvas-start offcanvas-md" id="mobileNav">
         <div class="offcanvas-header">
             <h3 class="offcanvas-title">Menu</h1>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -30,40 +25,52 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="location.html">Location</a></li>
+                    <a class="nav-link" href="geography.html">Geography</a></li>
                 <li class="nav-item">
                     <a class="nav-link" href="history.html">History</a></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Culture</a></li>
+                    <a class="nav-link" href="cultureAndDemo.html">Culture</a></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Other</a></li>                
+                    <a class="nav-link" href="famousGermansandSites.html">Famous People and Sites</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="economy.html">Economy</a>
+                </li>               
             </ul>
         </div>
     </div>
+
+    <!--Button to open Offcanvas nav menu-->
+    <button class="btn" id="offcanvasButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+        Menu
+    </button>
     </div>
 
-        <!--Nav Bar for larger screen sizes-->
-        <div class="navbar navbar-expand-sm">
-            <div class="container-fluid">
-               <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="location.html">Location</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="history.html">History</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="culture.html">Culture</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="other.html">Other</a>
-                    </li>
-               </ul> 
-            </div>
-        </div>
+<!--Nav Bar for larger screen sizes-->
+<div class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+       <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="geography.html">Geography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cultureAndDemo.html">Culture</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Other</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="famousGermansandSites.html">Famous People and Sites</a></li>
+                    <li><a class="dropdown-item" href="economy.html">Economy</a></li>
+                </ul>
+            </li>
+       </ul> 
+    </div>
+</div>
 
         <h1>Economy</h1>
 
