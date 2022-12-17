@@ -91,7 +91,7 @@ body{
 }
 
 /*Mobile Screen*/
-@media screen and (max-device-width: 719px){
+@media screen and (max-device-width: 767px){
 #offcanvasButton{
     font-size: 1.6rem;
 }
@@ -191,7 +191,7 @@ picture{
 }
 
 /*Larger Screen*/
-@media screen and (min-device-width: 720px){
+@media screen and (min-device-width: 768px){
     #offcanvasButton{
         display: none;
     }
@@ -199,6 +199,6 @@ picture{
 }
 
 /*Larger Screen*/
-@media screen and (min-device-width: 720px){
+@media screen and (min-device-width: 992px){
 
 }

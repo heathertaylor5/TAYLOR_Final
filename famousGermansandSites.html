@@ -117,10 +117,12 @@
     <div class="sites">
         <div class="site gate">
             <p class="famousSite">Brandenburg Gate</p>
-            <img src="images/brandenburg.jpg" alt="A photo of the Brandenburg Gate" 
-            data-bs-toggle="tooltip" 
-            data-bs-custom-class="custom-tooltip" 
-            data-bs-title="In the game Tropico, players can steal the Brandenburg Gate to improve their civilization.">
+            <picture>
+            <source media="(max-width: 767px)" srcset="images/brandenburgGate-mobile.jpg">
+            <source media="(min-width: 768px)" srcset="images/brandenburgGate-tablet.jpg">
+            <source media="(min-width: 992px)" srcset="images/brandenburgGate.jpg">
+            <img src="images/bradenburgGate-mobile.jpg" alt="A photo of the Brandenburg Gate">
+            </picture>
             <p class="siteInfo location">Location: Berlin</p>
             <p class="siteInfo">Erected in: 1791</p>
         </div>
