@@ -196,6 +196,11 @@ body{
     text-align: center;
 }
 
+.locationTitle{
+    background-color: #F8D000;
+    text-align: center;
+}
+
 .historyImage{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
