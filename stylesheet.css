@@ -85,9 +85,43 @@ body{
     text-align: right;
 }
 
+/*Famous person and sites cards*/
 .person{
     background-color: #F8D000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.famousName{
+    grid-column: 1/4;
+    font-weight: bold;
+    text-align: center;
+}
+
+.famousImage{
+    grid-column: 2/3;
+}
+
+.personInfo{
+    grid-column: 2/3;
+}
+
+.site{
+    background-color: #DC0707;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: white;
+}
+
+.famousSite{
+    grid-column: 1/4;
+    font-weight: bold;
+}
+
+.siteInfo{
+    grid-column: 2/3;
 }
 
 /*Mobile Screen*/
@@ -186,20 +220,124 @@ picture{
 
 .famousName{
     font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
 }
 
-/*Larger Screen*/
+.famousSite{
+    font-size: 2rem;
+}
+
+.famous{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+.people{
+    grid-column: 2/3;
+}
+
+.sites{
+    grid-column: 2/3;
+}
+
+.site{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.person{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/*Tablet Screen*/
 @media screen and (min-device-width: 768px){
     #offcanvasButton{
         display: none;
     }
 
+    .people{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+    }
+    .person.kant{
+        grid-column: 2/3;
+    }
+
+    .person.beethoven{
+        grid-column: 4/5;
+    }
+
+    .person.einstein{
+        grid-column: 2/5;
+    }
+
+    .sites{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+    }
+
+    .site.gate{
+        grid-column: 2/3;
+    }
+
+    .site.cathedral{
+        grid-column: 4/5;
+    }
+
+    .site.castle{
+        grid-column: 2/5;
+    }
 }
 
 /*Larger Screen*/
 @media screen and (min-device-width: 992px){
+    
+    .people{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .person.kant{
+        grid-column: 1/2;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .person.beethoven{
+        grid-column: 2/3;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .person.einstein{
+        grid-column: 3/4;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sites{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .site.gate{
+        grid-column: 1/2;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .site.cathedral{
+        grid-column: 2/3;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .site.castle{
+        grid-column: 3/4;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
 }
 

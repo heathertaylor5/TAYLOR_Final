@@ -69,8 +69,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="culture.html">Culture</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Other</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Other</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="famousGermansandSites.html">Famous People and Sites</a></li>
+                            <li><a class="dropdown-item" href="economy.html">Economy</a></li>
+                        </ul>
                     </li>
                </ul> 
             </div>
@@ -82,10 +86,11 @@
     </div>
 
     <!--Famous Germans and sites content-->
-    <div class="people kant">
-        <div class="person">
+    <div class="famous">
+    <div class="people">
+        <div class="person kant">
             <p class="famousName">Immanuel Kant</p>
-            <img srcset="images/kant-mobile.jpg 450w,
+            <img class="famousImage" srcset="images/kant-mobile.jpg 450w,
             images/kant-tablet.jpg 400w,
             images/kant.jpg 800w"
             sizes="(max-width: 767px) 450px,
@@ -100,7 +105,7 @@
 
         <div class="person beethoven">
             <p class="famousName">Ludwig van Beethoven</p>
-            <img srcset="images/Beethoven-mobile.jpg 450w,
+            <img class="famousImage" srcset="images/Beethoven-mobile.jpg 450w,
             images/Beethoven-tablet.jpg 400w,
             images/Beethoven.jpg 800w"
             sizes="(max-width: 767px) 450px,
@@ -115,7 +120,7 @@
 
         <div class="person einstein">
             <p class="famousName">Albert Einstein</p>
-            <img srcset="images/Eitnstein-mobile.jpg 450w,
+            <img class="famousImage" srcset="images/Eitnstein-mobile.jpg 450w,
                             images/Einstein-tablet.jpg 400w,
                             images/Einstein.jpg 800w"
                             sizes="(max-width: 767px) 450px,
@@ -132,7 +137,7 @@
     <div class="sites">
         <div class="site gate">
             <p class="famousSite">Brandenburg Gate</p>
-            <img
+            <img class="famousImage"
                 srcset="images/bradenburgGate-mobile.jpg 450w,
                         images/bradenburgGate-tablet.jpg 400w,
                         images/bradenburgGate.jpg 800w"
@@ -150,7 +155,7 @@
 
         <div class="site cathedral">
             <p class="famousSite">Cologne Cathedral</p>
-            <img srcset="images/cologne-mobile.jpg 450w,
+            <img class="famousImage" srcset="images/cologne-mobile.jpg 450w,
             images/cologne-tablet.jpg 400w,
             images/cologne.jpg 800w"
             sizes="(max-width: 767px) 450px,
@@ -165,7 +170,7 @@
 
         <div class="site castle">
             <p class="famousSite">Neuschwanstein Castle</p>
-            <img srcset="images/neuschwanstein-mobile.jpg 450w,
+            <img class="famousImage" srcset="images/neuschwanstein-mobile.jpg 450w,
             images/neuschwanstein-tablet.jpg 400w,
             images/neuschwanstein.jpg 800w"
             sizes="(max-width: 767px) 450px,
@@ -177,6 +182,7 @@
             <p class="siteInfo location">Location: Hohenschwangau</p>
             <p class="siteInfo">Erected in: 1886</p>
         </div>
+    </div>
     </div>
 
     <!--Footer-->
