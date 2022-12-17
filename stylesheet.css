@@ -210,6 +210,7 @@ body{
     text-align: center;
 }
 
+
 .locationTitle{
     background-color: #F8D000;
     text-align: center;
@@ -268,8 +269,6 @@ picture{
     margin-bottom: 10px;
 }
 
-
-
 /*Tablet Screen*/
 @media screen and (min-device-width: 768px){
     #offcanvasButton{
@@ -316,6 +315,30 @@ picture{
 
     .flagBlock{
         grid-column: 2/3;
+    }
+
+    .historyBody{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: auto auto;
+    }
+
+    .historyImage{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 300px;
+        
+    }
+
+    .historyIntro{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 100px;
+    }
+
+    .historyAccordion{
+        grid-column: 2/3;
+        grid-row: 1/3;
     }
 }
 

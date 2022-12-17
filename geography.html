@@ -91,6 +91,22 @@
                 grid-template-rows: 1fr;
             }
             }
+        @media screen and (min-device-width: 768px){
+            .locationInfo{
+                display: grid;
+                grid-template-columns: auto auto;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            #offcanvasButton{
+                display: none;
+            }
+
+            .states{
+                grid-column: 1/3;
+            }
+        }
 	  </style>
     </head>
     <body>
@@ -158,12 +174,20 @@
 
         <h1>Geography</h1>
 
+        <div class="locationInfo">
+            <p>Location: Europe</p>
+            <p>Time Zone: Central European Standard Time</p>
+            <p>Climate: Temperate, Rainy</p>
+            <p>Number of Cities: 2055</p>
+            <p class="states">Number of States: 16</p>
+        </div>
+
         <p>When someone thinks about Germany's physical geography, they'll usually mention the Black Forest or the Rhine. And while these are impressive features, this country is home to all kinds of different biomes.</p>
 
         <div class="container">
           <div class="row">
             <div class="card mx-auto col-md-6 col-lg-4">
-                <img src="Zugspitze_Westansicht.JPG" class="" alt="A snow-peaked mountain range">
+                <img src="images/Zugspitze_Westansicht.JPG" class="" alt="A snow-peaked mountain range">
                 <div class="">
                   <h5 class="card-title text-center">Zugspitze</h5>
                   <p>Zugspitze is highest mountain in Germany at an impressive 2,962m (9,718ft) above sea level. It belongs to the Wetterstein range of the Northern Limestone Alps. The mountain is also home to Germany's two largest glaciers!</p>
@@ -171,7 +195,7 @@
               </div>
 
               <div class="card mx-auto col-md-6 col-lg-4">
-                <img src="rugen-island.jpg" alt="The coast of Rügen island">
+                <img src="images/rugen-island.jpg" alt="The coast of Rügen island">
                 <div class="">
                   <h5 class="card-title text-center">Rügen</h5>
                   <p>Speaking of large geopgraphical features, Rügen is Germany's largest island! Due to it's gorgeous beaches and stunning chalk cliffs, it's a popular tourist destination. It also has multiple national parks so you can properly take in all the scenery.</p>
@@ -179,28 +203,28 @@
               </div>
 
               <div class="card mx-auto col-md-6 col-lg-4">
-                <img src="black-forest.webp" class="" alt="A forest with fog rolling in">
+                <img src="images/black-forest.webp" class="" alt="A forest with fog rolling in">
                 <div class="">
                   <h5 class="card-title text-center">Black Forest</h5>
                   <p>While I did mention the Black Forest as one of Germany's more well known features, I still believe it's worth mentioning here. Located close to the border of France, the Black Forest entends for over 160km. It's known for it's sprawling dark woods but it also encompasses large mountains and valleys.</p>
                 </div>              
               </div>
               <div class="card mx-auto col-md-6 col-lg-4">
-                <img src="rhine.webp" class="" alt="A very large river">
+                <img src="images/rhine.webp" class="" alt="A very large river">
                 <div class="">
                   <h5 class="card-title text-center">Rhine</h5>
                   <p>The Rhine is another more well known feature of the landscape. It's the second-largest river in Germany behind the Danube, at around 1,230km. In the past, it was part of the Roman Empire's boundary. Back then it was a vital waterway for bringing goods to the people and it still is used for that purpose ever since.</p>
                 </div>              
               </div>
               <div class="card mx-auto col-md-6 col-lg-4">
-                <img src="sylt.jpg" class="" alt="The beach on the island of Sylt">
+                <img src="images/sylt.jpg" class="" alt="The beach on the island of Sylt">
                 <div class="">
                   <h5 class="card-title text-center">Sylt</h5>
                   <p>Usually when you think of going on a beach vacation, Germany doesn't come up as an option. However, you would be missing out! The northern island of Sylt has beautiful sandy beaches and lots of surfing potential!</p>
                 </div>              
               </div>
               <div class="card mx-auto col-md-6 col-lg-4">
-                <img src="konigsee.jpg" class="" alt="A vast lake">
+                <img src="images/konigsee.jpg" class="" alt="A vast lake">
                 <div class="">
                   <h5 class="card-title text-center">Königssee</h5>
                   <p>Königssee is a beautiful lake in the south of Germany that was formed by glaciers during the last ice age. It's known for being the cleanest lake in Germany with incredibly clear water.</p>
