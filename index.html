@@ -79,8 +79,8 @@
         </div>
     </div>
     
-
-    <!--Image carousel-->
+<div class="indexPage">
+        <!--Image carousel-->
     <div id="indexCarousel" class="carousel slide" data-bs-ride="carousel">
 
     <!--Carousel indicator dots-->
@@ -127,18 +127,39 @@
     <div class="flagBlockContent">
         <div class="flagBlock">
             <div class="blackBlock">
-                <a class="flagBlockNav white" href="#">Explore Culture</a>
-                <img class="flagBlockImg" src="images/culture-tiny.PNG" alt="People dressed in traditional German clothing drinking beer">
+                <a class="flagBlockNav white" href="cultureAndDemo.html">Explore Culture</a>
+                <img class="flagBlockImg" 
+                srcset="images/culture-mobile.png 100w,
+                        images/culture-tablet.png 200w,
+                        images/culture.png 300w"
+                sizes="(max-width: 767px) 100px,
+                        (max-width: 991px) 200px,
+                        300px" 
+                        alt="People dressed in traditional German clothing drinking beer">
             </div>
             <div class="redBlock">
-                <img class="flagBlockImg" src="images/history-tiny.PNG" alt="Many prominent figures from German history.">
+                <img class="flagBlockImg" 
+                srcset="images/history-tiny.png 100w,
+                        images/history-lessTiny.png 200w,
+                        images/history-block.png 300w"
+                sizes="(max-width: 767px) 100px,
+                        (max-width: 991px) 200px,
+                        300px"
+                alt="Many prominent figures from German history.">
                 <a class="flagBlockNav" href="history.html">Discover History</a> 
             </div>
             <div class="yellowBlock">
-                <a class="flagBlockNav" href="location.html">Study Geography</a>
-                <img class="flagBlockImg" src="images/map-tiny.png" alt="A sketched outline of a world map.">
+                <a class="flagBlockNav" href="geography.html">Study Geography</a>
+                <img class="flagBlockImg"  
+                srcset="images/map-mobile.png 100w,
+                        images/map-tablet.png 200w,
+                        images/map.png 300w"
+                sizes="(max-width: 767px) 100px,
+                        (max-width: 991px) 200px,
+                        300px">
             </div>
         </div>
+    </div>
     </div>
 
     <!--Footer-->

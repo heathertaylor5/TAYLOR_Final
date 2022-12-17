@@ -85,6 +85,16 @@ body{
     text-align: right;
 }
 
+.flagBlockNav{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.flagBlockNav.white{
+    color: white;
+}
+
 /*Famous person and sites cards*/
 .person{
     background-color: #F8D000;
@@ -128,6 +138,10 @@ body{
 @media screen and (max-device-width: 767px){
 #offcanvasButton{
     font-size: 1.6rem;
+}
+
+.flagBlockImg{
+    display: none;
 }
 
 .navbar{
@@ -294,11 +308,43 @@ picture{
     .site.castle{
         grid-column: 2/5;
     }
+
+    .flagBlockContent{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    .flagBlock{
+        grid-column: 2/3;
+    }
 }
 
 /*Larger Screen*/
 @media screen and (min-device-width: 992px){
-    
+    .indexPage{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .indexCarousel{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .introText{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .flagBlock{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        height: 600px;
+        box-sizing: border-box;
+    }
+
     .people{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
