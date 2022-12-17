@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <style>
+            h1 {
+                text-align: center;
+                background-color: #f8d000;
+            }
+            img {
+                max-width: 100%;
+            }
+            p {
+                text-align: center;
+            }
+        
+            .card {
+                margin-bottom: 10px;
+            }
+
+            .footer{
+                background-color: #DC0707;
+                font-weight: bold;
+                font-variant: small-caps;
+                 display: grid;
+                grid-template-columns: auto auto auto;
+                margin-bottom: 0;
+                margin-top: 40px;
+                padding-right: 5px;
+                padding-left: 5px;
+                font-size: .8rem;
+            } 
+
+            body{
+                font-size: 1.2rem;
+                margin: 0;
+                background-color: rgb(214, 210, 210);
+            }
+
+            .header{
+                margin: 0;
+                color: #DC0707;
+                text-align: center;
+                background-color: black;
+            }
+
+            .headerTitle{
+                grid-column: 2/3;
+                grid-row: 1/2;
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+
+
+            #offcanvasButton{
+                background-color: #DC0707;
+                color: black;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                width: 60%;
+                font-weight: bold;
+            }
+
+
+            .navbar{
+                background-color: #DC0707;
+            }
+
+            .nav-link{
+                color: white;
+            }
+
+            @media screen and (max-device-width: 768px){
+
+            #offcanvasButton{
+                font-size: 1.6rem;
+            }
+
+            .navbar{
+                display: none;
+            }
+
+            .header{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+            }
+            }
+	  </style>
+    </head>
+    <body>
+
+        <!--Header-->
+    <div class="header">
+        <p class="headerTitle">Deutschland</p>
+
+    <!--Button to open Offcanvas nav menu-->
+    <button class="btn d-md-none" id="offcanvasButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+        Menu
+    </button>
+
+    <!--Offcanvas nav menu-->
+    <div class="offcanvas offcanvas-start" id="mobileNav">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Menu</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="location.html">Location</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="history.html">History</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Culture</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Other</a></li>                
+            </ul>
+        </div>
+    </div>
+    </div>
+
+        <!--Nav Bar for larger screen sizes-->
+        <div class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+               <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="culture.html">Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="other.html">Other</a>
+                    </li>
+               </ul> 
+            </div>
+        </div>
+
+        <h1>Geography</h1>
+
+        <p>When someone thinks about Germany's physical geography, they'll usually mention the Black Forest or the Rhine. And while these are impressive features, this country is home to all kinds of different biomes.</p>
+
+        <div class="container">
+          <div class="row">
+            <div class="card mx-auto col-md-6 col-lg-4">
+                <img src="Zugspitze_Westansicht.JPG" class="" alt="A snow-peaked mountain range">
+                <div class="">
+                  <h5 class="card-title text-center">Zugspitze</h5>
+                  <p>Zugspitze is highest mountain in Germany at an impressive 2,962m (9,718ft) above sea level. It belongs to the Wetterstein range of the Northern Limestone Alps. The mountain is also home to Germany's two largest glaciers!</p>
+                </div>              
+              </div>
+
+              <div class="card mx-auto col-md-6 col-lg-4">
+                <img src="rugen-island.jpg" alt="The coast of Rügen island">
+                <div class="">
+                  <h5 class="card-title text-center">Rügen</h5>
+                  <p>Speaking of large geopgraphical features, Rügen is Germany's largest island! Due to it's gorgeous beaches and stunning chalk cliffs, it's a popular tourist destination. It also has multiple national parks so you can properly take in all the scenery.</p>
+                </div>              
+              </div>
+
+              <div class="card mx-auto col-md-6 col-lg-4">
+                <img src="black-forest.webp" class="" alt="A forest with fog rolling in">
+                <div class="">
+                  <h5 class="card-title text-center">Black Forest</h5>
+                  <p>While I did mention the Black Forest as one of Germany's more well known features, I still believe it's worth mentioning here. Located close to the border of France, the Black Forest entends for over 160km. It's known for it's sprawling dark woods but it also encompasses large mountains and valleys.</p>
+                </div>              
+              </div>
+              <div class="card mx-auto col-md-6 col-lg-4">
+                <img src="rhine.webp" class="" alt="A very large river">
+                <div class="">
+                  <h5 class="card-title text-center">Rhine</h5>
+                  <p>The Rhine is another more well known feature of the landscape. It's the second-largest river in Germany behind the Danube, at around 1,230km. In the past, it was part of the Roman Empire's boundary. Back then it was a vital waterway for bringing goods to the people and it still is used for that purpose ever since.</p>
+                </div>              
+              </div>
+              <div class="card mx-auto col-md-6 col-lg-4">
+                <img src="sylt.jpg" class="" alt="The beach on the island of Sylt">
+                <div class="">
+                  <h5 class="card-title text-center">Sylt</h5>
+                  <p>Usually when you think of going on a beach vacation, Germany doesn't come up as an option. However, you would be missing out! The northern island of Sylt has beautiful sandy beaches and lots of surfing potential!</p>
+                </div>              
+              </div>
+              <div class="card mx-auto col-md-6 col-lg-4">
+                <img src="konigsee.jpg" class="" alt="A vast lake">
+                <div class="">
+                  <h5 class="card-title text-center">Königssee</h5>
+                  <p>Königssee is a beautiful lake in the south of Germany that was formed by glaciers during the last ice age. It's known for being the cleanest lake in Germany with incredibly clear water.</p>
+                </div>              
+              </div>
+        </div>
+
+        <!--Footer-->
+    <div class="footer">
+        <div class="className">
+            <p>Responsive Web Design</p>
+        </div>
+        <div class="names">
+            <p>Evan Budwill & Heather Taylor</p>
+        </div>
+        <div class="dueDate">
+            <p>December 16, 2022</p>
+        </div>
+    </div>
+    </body>
+</html>
